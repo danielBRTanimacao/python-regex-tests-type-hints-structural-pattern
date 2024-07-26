@@ -1,5 +1,5 @@
 import unittest
-from baconwitheggs import bacon_with_eggs
+from testes_tdd.src.baconwitheggs import bacon_with_eggs
 
 class TestBaconWithEggs(unittest.TestCase):
     def test_bacon_with_eggs_need_to_raise_assertion_if_is_not_int(self):
@@ -55,4 +55,5 @@ class TestBaconWithEggs(unittest.TestCase):
                 )
 
 
-unittest.main(verbosity=2)
+if __name__ == '__main__':
+    unittest.main(verbosity=2)

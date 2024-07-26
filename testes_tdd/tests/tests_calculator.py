@@ -1,5 +1,5 @@
 import unittest
-from calculator import sum_, mult_
+from testes_tdd.src.calculator import sum_, mult_
 
 class TestCalculator(unittest.TestCase):
     def test_sum_number_with_number_to_return_number(self):
@@ -26,4 +26,5 @@ class TestCalculator(unittest.TestCase):
             sum_('10', 10)
 
 
-unittest.main(verbosity=2)
+if __name__ == '__main__':
+    unittest.main(verbosity=2)
